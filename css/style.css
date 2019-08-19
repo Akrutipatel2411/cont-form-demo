@@ -1,0 +1,144 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+input,textarea,button
+{
+    border: none;
+}
+.main-head
+{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+
+    
+}
+.inner-cont
+{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.form-sec
+{
+    width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 2px;
+    margin-top: 55px;
+    padding: 92px 70px 88px;
+    position: relative;
+
+}
+.msg-img
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #e7e7e7;
+    border-radius: 50%;
+    background: #fff;
+    top: -55px;
+    left: 45%;
+    padding: 30px 0px;
+    text-align: center;
+}
+form
+{
+    width: 100%;
+}
+.drop-msg
+{
+    width: 100%;
+    display: block;
+    font-size: 30px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 43px;
+}
+.main-row
+{
+    width: 100%;
+    overflow: auto
+    
+}
+.half
+{
+        width: 45%;
+    float: left;
+    margin: 10px;
+}
+
+.inner-inputs
+{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    margin-bottom: 30px;
+/*    width: 100%;*/
+}
+input[type="text"]
+{
+    width: 100%;
+    height: 60px;
+    padding: 0 20px 0 25px;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    
+    color: #333333;
+    line-height: 1.2;
+}
+textarea
+{
+    min-height: 199px;
+    padding: 25px 20px 15px 25px;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    
+
+}
+::placeholder
+{
+    color: #333333;
+    line-height: 1.2;
+}
+.button-send
+{
+    width: 100%;
+    
+}
+button
+{
+    padding: 0 20px;
+    min-width: 100px;
+    height: 50px;
+    background-color: #ff4b5a;
+    border-radius: 2px;
+    
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+}
+
