@@ -14,27 +14,34 @@ html,body
 input,textarea,button
 {
     border: none;
+    
 }
 .main-head
 {
     width: 100%;
     height: 100%;
-    padding: 15px;
     background: transparent;
     position: relative;
-    z-index: 1;
+/*    z-index: 1;*/
 
     
 }
 .inner-cont
 {
-    position: absolute;
-    z-index: 0;
+    
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     overflow: hidden;
+    position: absolute;
+}
+.main-form
+{
+    background-color: rgba(0,0,0,0.33);
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 .form-sec
 {
@@ -44,7 +51,13 @@ input,textarea,button
     border-radius: 2px;
     margin-top: 55px;
     padding: 92px 70px 88px;
-    position: relative;
+    position: absolute;
+    top: 50px;
+    right: 0;
+/*    bottom: 0;*/
+    left: 0;
+/*    z-index: -2;*/
+    
 
 }
 .msg-img
@@ -80,11 +93,16 @@ form
     overflow: auto
     
 }
-.half
+.half1
 {
-        width: 45%;
+    width: calc((100% - 20px) / 2);
     float: left;
-    margin: 10px;
+ 
+}
+.half2
+{
+    width: calc((100% - 20px) / 2);
+    float: right;
 }
 
 .inner-inputs
@@ -102,9 +120,7 @@ input[type="text"]
     padding: 0 20px 0 25px;
     font-size: 20px;
     display: block;
-    width: 100%;
     background: transparent;
-    
     color: #333333;
     line-height: 1.2;
 }
@@ -112,33 +128,53 @@ textarea
 {
     min-height: 199px;
     padding: 25px 20px 15px 25px;
-    font-size: 15px;
+    
     display: block;
     width: 100%;
     background: transparent;
     
 
 }
-::placeholder
+textarea::-webkit-input-placeholder
 {
     color: #333333;
+    font-size: 15px;
     line-height: 1.2;
+    font-family: 'Open Sans', sans-serif;
 }
 .button-send
 {
     width: 100%;
+    position: relative;
     
 }
-button
+.send-me
 {
     padding: 0 20px;
     min-width: 100px;
     height: 50px;
     background-color: #ff4b5a;
     border-radius: 2px;
-    
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #fff;
     line-height: 1.2;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+}
+input[type="text"]:focus
+{
+    border: 1px solid red;
+    outline: none;
+}
+textarea:focus
+{
+   border: 1px solid red;
+    outline: none; 
+}
+.send-me:hover
+{
+    background-color: black;
 }
 
